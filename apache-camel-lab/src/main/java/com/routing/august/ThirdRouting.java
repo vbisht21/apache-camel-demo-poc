@@ -25,7 +25,7 @@ public class ThirdRouting {
 				.to("file:src/main/data/out/uk")
 				.when(simple("${file:ext} == 'xml'"))
 				.to("file:src/main/data/out/others");*/
-				
+				//system
 			//backup prog
 				from("file:src/main/data/in?noop=true&move=D:/softwares/backup${date:now:yyyyMMdd}/${file:name.noext}.xml&recursive=false&sortBy=reverse:file:name")
 				
